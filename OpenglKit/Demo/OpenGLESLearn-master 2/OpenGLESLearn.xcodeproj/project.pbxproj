@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4D43401EE6AE87007AC649 /* metal_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E4D433E1EE6AE33007AC649 /* metal_03.png */; };
+		8E4D43421EE6AE89007AC649 /* metal_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E4D433F1EE6AE33007AC649 /* metal_01.png */; };
+		8E4D43441EE6AF02007AC649 /* metal_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E4D43431EE6AEF7007AC649 /* metal_02.jpg */; };
+		8E689D0B1EA5E1EB00ADB0A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E689D0A1EA5E1EB00ADB0A8 /* main.m */; };
+		8E689D0E1EA5E1EB00ADB0A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E689D0D1EA5E1EB00ADB0A8 /* AppDelegate.m */; };
+		8E689D141EA5E1EB00ADB0A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E689D121EA5E1EB00ADB0A8 /* Main.storyboard */; };
+		8E689D161EA5E1EB00ADB0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E689D151EA5E1EB00ADB0A8 /* Assets.xcassets */; };
+		8E689D191EA5E1EB00ADB0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E689D171EA5E1EB00ADB0A8 /* LaunchScreen.storyboard */; };
+		8E689D241EA5E1EB00ADB0A8 /* OpenGLESLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E689D231EA5E1EB00ADB0A8 /* OpenGLESLearnTests.m */; };
+		8E7569381EE9398A004CC68F /* frag_terrain.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E7569371EE9398A004CC68F /* frag_terrain.glsl */; };
+		8E75693B1EE93A3D004CC68F /* dirt_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E75693A1EE93A3A004CC68F /* dirt_01.jpg */; };
+		8E75693C1EE93A3E004CC68F /* grass_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E7569391EE93A3A004CC68F /* grass_01.jpg */; };
+		8EE3673E1EE8FABD005A8D86 /* Terrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3673D1EE8FABD005A8D86 /* Terrain.m */; };
+		8EF0AEF21EE644E5003A4EF9 /* Cylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0AEF11EE644E5003A4EF9 /* Cylinder.m */; };
+		8EF0AEF51EE647D7003A4EF9 /* GLGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF0AEF41EE647D7003A4EF9 /* GLGeometry.m */; };
+		8EFB90101EE8FEAF0083B1C6 /* terrain_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EE3673B1EE8FAA9005A8D86 /* terrain_01.jpg */; };
+		D310D8B31F0C821F00734C7F /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = D310D8B21F0C821F00734C7F /* Plane.m */; };
+		D310D8B51F0C85F100734C7F /* frag_framebuffer_plane.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D310D8B41F0C85F100734C7F /* frag_framebuffer_plane.glsl */; };
+		D314F0D71EF90BB4009878C2 /* car.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D314F0D61EF90BB1009878C2 /* car.mtl */; };
+		D314F0D81EF90BB5009878C2 /* car.obj in Resources */ = {isa = PBXBuildFile; fileRef = D314F0D51EF90BB1009878C2 /* car.obj */; };
+		D31C9B6B1EF8D02E00FF4903 /* smoothMonkey.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D31C9B6A1EF8CF9100FF4903 /* smoothMonkey.mtl */; };
+		D31C9B6C1EF8D02E00FF4903 /* smoothMonkey.obj in Resources */ = {isa = PBXBuildFile; fileRef = D31C9B691EF8CF9100FF4903 /* smoothMonkey.obj */; };
+		D31F594A1EF8C26600F55FE7 /* WavefrontOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59491EF8C26600F55FE7 /* WavefrontOBJ.m */; };
+		D328744C1F395CA400BD42C8 /* metal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D328744B1F395CA400BD42C8 /* metal.jpg */; };
+		D3585DD71F3951E6003F1076 /* cube-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3585DD11F3951E6003F1076 /* cube-5.jpg */; };
+		D3585DD81F3951E6003F1076 /* cube-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3585DD21F3951E6003F1076 /* cube-6.jpg */; };
+		D3585DD91F3951E6003F1076 /* cube-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3585DD31F3951E6003F1076 /* cube-3.jpg */; };
+		D3585DDA1F3951E6003F1076 /* cube-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3585DD41F3951E6003F1076 /* cube-4.jpg */; };
+		D3585DDB1F3951E6003F1076 /* cube-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3585DD51F3951E6003F1076 /* cube-2.jpg */; };
+		D3585DDC1F3951E6003F1076 /* cube-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3585DD61F3951E6003F1076 /* cube-1.jpg */; };
+		D3585DDF1F3953AF003F1076 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = D3585DDD1F3953AF003F1076 /* sphere.obj */; };
+		D3585DE01F3953AF003F1076 /* sphere.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D3585DDE1F3953AF003F1076 /* sphere.mtl */; };
+		D37013B81F0A1433001AEF22 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D37013B71F0A142E001AEF22 /* normal.png */; };
+		D383E3B71F188D7300EA64DF /* stoneFloor_NRM.png in Resources */ = {isa = PBXBuildFile; fileRef = D383E3B51F188D6900EA64DF /* stoneFloor_NRM.png */; };
+		D383E3B81F188D7300EA64DF /* stoneFloor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D383E3B61F188D6900EA64DF /* stoneFloor.jpg */; };
+		D383E3BA1F18C3BC00EA64DF /* frag_shadowmap.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D383E3B91F18C3BC00EA64DF /* frag_shadowmap.glsl */; };
+		D3BD84091F177624002F5DB1 /* squarepants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3BD84081F177618002F5DB1 /* squarepants.jpg */; };
+		D3F2841E1ECB2BE2009783FC /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F284111ECB2BE2009783FC /* Cube.m */; };
+		D3F2841F1ECB2BE2009783FC /* GLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F284131ECB2BE2009783FC /* GLContext.m */; };
+		D3F284201ECB2BE2009783FC /* GLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F284151ECB2BE2009783FC /* GLObject.m */; };
+		D3F284211ECB2BE2009783FC /* Laser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F284171ECB2BE2009783FC /* Laser.m */; };
+		D3F284221ECB2BE2009783FC /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D3F284191ECB2BE2009783FC /* fragment.glsl */; };
+		D3F284231ECB2BE2009783FC /* frg_laser.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D3F2841A1ECB2BE2009783FC /* frg_laser.glsl */; };
+		D3F284241ECB2BE2009783FC /* laser.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F2841B1ECB2BE2009783FC /* laser.png */; };
+		D3F284251ECB2BE2009783FC /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3F2841C1ECB2BE2009783FC /* texture.jpg */; };
+		D3F284261ECB2BE2009783FC /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D3F2841D1ECB2BE2009783FC /* vertex.glsl */; };
+		D3F2842C1ECB2C46009783FC /* GLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F284291ECB2C46009783FC /* GLBaseViewController.m */; };
+		D3F2842D1ECB2C46009783FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F2842B1ECB2C46009783FC /* ViewController.m */; };
+		D3F364151F3DB43B0013FA9C /* Mirror.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F364141F3DB43B0013FA9C /* Mirror.m */; };
+		D3F364171F3DB8590013FA9C /* texture_NRM.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F364161F3DB8590013FA9C /* texture_NRM.png */; };
+		D3F7C2F61EF8F6FC00A6CF8C /* cube.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D3F7C2F41EF8F6C500A6CF8C /* cube.mtl */; };
+		D3F7C2F71EF8F6FD00A6CF8C /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = D3F7C2F51EF8F6C500A6CF8C /* cube.obj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E689D201EA5E1EB00ADB0A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E689CFE1EA5E1EB00ADB0A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E689D051EA5E1EB00ADB0A8;
+			remoteInfo = OpenGLESLearn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E4D433E1EE6AE33007AC649 /* metal_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal_03.png; sourceTree = "<group>"; };
+		8E4D433F1EE6AE33007AC649 /* metal_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal_01.png; sourceTree = "<group>"; };
+		8E4D43431EE6AEF7007AC649 /* metal_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metal_02.jpg; sourceTree = "<group>"; };
+		8E689D061EA5E1EB00ADB0A8 /* OpenGLESLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E689D0A1EA5E1EB00ADB0A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E689D0C1EA5E1EB00ADB0A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E689D0D1EA5E1EB00ADB0A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E689D131EA5E1EB00ADB0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E689D151EA5E1EB00ADB0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E689D181EA5E1EB00ADB0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E689D1A1EA5E1EB00ADB0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E689D1F1EA5E1EB00ADB0A8 /* OpenGLESLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLESLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E689D231EA5E1EB00ADB0A8 /* OpenGLESLearnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESLearnTests.m; sourceTree = "<group>"; };
+		8E689D251EA5E1EB00ADB0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7569371EE9398A004CC68F /* frag_terrain.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag_terrain.glsl; sourceTree = "<group>"; };
+		8E7569391EE93A3A004CC68F /* grass_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass_01.jpg; sourceTree = "<group>"; };
+		8E75693A1EE93A3A004CC68F /* dirt_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dirt_01.jpg; sourceTree = "<group>"; };
+		8EE3673B1EE8FAA9005A8D86 /* terrain_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terrain_01.jpg; sourceTree = "<group>"; };
+		8EE3673C1EE8FABD005A8D86 /* Terrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
+		8EE3673D1EE8FABD005A8D86 /* Terrain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Terrain.m; sourceTree = "<group>"; };
+		8EF0AEF01EE644E5003A4EF9 /* Cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cylinder.h; sourceTree = "<group>"; };
+		8EF0AEF11EE644E5003A4EF9 /* Cylinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cylinder.m; sourceTree = "<group>"; };
+		8EF0AEF31EE647D7003A4EF9 /* GLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometry.h; sourceTree = "<group>"; };
+		8EF0AEF41EE647D7003A4EF9 /* GLGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGeometry.m; sourceTree = "<group>"; };
+		D310D8B11F0C821F00734C7F /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		D310D8B21F0C821F00734C7F /* Plane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
+		D310D8B41F0C85F100734C7F /* frag_framebuffer_plane.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag_framebuffer_plane.glsl; sourceTree = "<group>"; };
+		D314F0D51EF90BB1009878C2 /* car.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = car.obj; sourceTree = "<group>"; };
+		D314F0D61EF90BB1009878C2 /* car.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = car.mtl; sourceTree = "<group>"; };
+		D31C9B691EF8CF9100FF4903 /* smoothMonkey.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = smoothMonkey.obj; sourceTree = "<group>"; };
+		D31C9B6A1EF8CF9100FF4903 /* smoothMonkey.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = smoothMonkey.mtl; sourceTree = "<group>"; };
+		D31F59481EF8C26600F55FE7 /* WavefrontOBJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WavefrontOBJ.h; sourceTree = "<group>"; };
+		D31F59491EF8C26600F55FE7 /* WavefrontOBJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WavefrontOBJ.m; sourceTree = "<group>"; };
+		D328744B1F395CA400BD42C8 /* metal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metal.jpg; sourceTree = "<group>"; };
+		D3585DD11F3951E6003F1076 /* cube-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cube-5.jpg"; sourceTree = "<group>"; };
+		D3585DD21F3951E6003F1076 /* cube-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cube-6.jpg"; sourceTree = "<group>"; };
+		D3585DD31F3951E6003F1076 /* cube-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cube-3.jpg"; sourceTree = "<group>"; };
+		D3585DD41F3951E6003F1076 /* cube-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cube-4.jpg"; sourceTree = "<group>"; };
+		D3585DD51F3951E6003F1076 /* cube-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cube-2.jpg"; sourceTree = "<group>"; };
+		D3585DD61F3951E6003F1076 /* cube-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cube-1.jpg"; sourceTree = "<group>"; };
+		D3585DDD1F3953AF003F1076 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		D3585DDE1F3953AF003F1076 /* sphere.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.mtl; sourceTree = "<group>"; };
+		D37013B71F0A142E001AEF22 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		D383E3B51F188D6900EA64DF /* stoneFloor_NRM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stoneFloor_NRM.png; sourceTree = "<group>"; };
+		D383E3B61F188D6900EA64DF /* stoneFloor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stoneFloor.jpg; sourceTree = "<group>"; };
+		D383E3B91F18C3BC00EA64DF /* frag_shadowmap.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag_shadowmap.glsl; sourceTree = "<group>"; };
+		D3BD84081F177618002F5DB1 /* squarepants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squarepants.jpg; sourceTree = "<group>"; };
+		D3F284101ECB2BE2009783FC /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		D3F284111ECB2BE2009783FC /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		D3F284121ECB2BE2009783FC /* GLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLContext.h; sourceTree = "<group>"; };
+		D3F284131ECB2BE2009783FC /* GLContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLContext.m; sourceTree = "<group>"; };
+		D3F284141ECB2BE2009783FC /* GLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLObject.h; sourceTree = "<group>"; };
+		D3F284151ECB2BE2009783FC /* GLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLObject.m; sourceTree = "<group>"; };
+		D3F284161ECB2BE2009783FC /* Laser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Laser.h; sourceTree = "<group>"; };
+		D3F284171ECB2BE2009783FC /* Laser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Laser.m; sourceTree = "<group>"; };
+		D3F284191ECB2BE2009783FC /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		D3F2841A1ECB2BE2009783FC /* frg_laser.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_laser.glsl; sourceTree = "<group>"; };
+		D3F2841B1ECB2BE2009783FC /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
+		D3F2841C1ECB2BE2009783FC /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
+		D3F2841D1ECB2BE2009783FC /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		D3F284281ECB2C46009783FC /* GLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBaseViewController.h; sourceTree = "<group>"; };
+		D3F284291ECB2C46009783FC /* GLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBaseViewController.m; sourceTree = "<group>"; };
+		D3F2842A1ECB2C46009783FC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D3F2842B1ECB2C46009783FC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3F364131F3DB43B0013FA9C /* Mirror.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mirror.h; sourceTree = "<group>"; };
+		D3F364141F3DB43B0013FA9C /* Mirror.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mirror.m; sourceTree = "<group>"; };
+		D3F364161F3DB8590013FA9C /* texture_NRM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_NRM.png; sourceTree = "<group>"; };
+		D3F7C2F41EF8F6C500A6CF8C /* cube.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cube.mtl; sourceTree = "<group>"; };
+		D3F7C2F51EF8F6C500A6CF8C /* cube.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E689D031EA5E1EB00ADB0A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E689D1C1EA5E1EB00ADB0A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E689CFD1EA5E1EB00ADB0A8 = {
+			isa = PBXGroup;
+			children = (
+				8E689D081EA5E1EB00ADB0A8 /* OpenGLESLearn */,
+				8E689D221EA5E1EB00ADB0A8 /* OpenGLESLearnTests */,
+				8E689D071EA5E1EB00ADB0A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E689D071EA5E1EB00ADB0A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E689D061EA5E1EB00ADB0A8 /* OpenGLESLearn.app */,
+				8E689D1F1EA5E1EB00ADB0A8 /* OpenGLESLearnTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E689D081EA5E1EB00ADB0A8 /* OpenGLESLearn */ = {
+			isa = PBXGroup;
+			children = (
+				D3F284271ECB2C46009783FC /* ViewControllers */,
+				D3F2840F1ECB2BE2009783FC /* GL */,
+				D3F284181ECB2BE2009783FC /* Resources */,
+				8E689D0C1EA5E1EB00ADB0A8 /* AppDelegate.h */,
+				8E689D0D1EA5E1EB00ADB0A8 /* AppDelegate.m */,
+				8E689D121EA5E1EB00ADB0A8 /* Main.storyboard */,
+				8E689D151EA5E1EB00ADB0A8 /* Assets.xcassets */,
+				8E689D171EA5E1EB00ADB0A8 /* LaunchScreen.storyboard */,
+				8E689D1A1EA5E1EB00ADB0A8 /* Info.plist */,
+				8E689D091EA5E1EB00ADB0A8 /* Supporting Files */,
+			);
+			path = OpenGLESLearn;
+			sourceTree = "<group>";
+		};
+		8E689D091EA5E1EB00ADB0A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E689D0A1EA5E1EB00ADB0A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E689D221EA5E1EB00ADB0A8 /* OpenGLESLearnTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E689D231EA5E1EB00ADB0A8 /* OpenGLESLearnTests.m */,
+				8E689D251EA5E1EB00ADB0A8 /* Info.plist */,
+			);
+			path = OpenGLESLearnTests;
+			sourceTree = "<group>";
+		};
+		D3F2840F1ECB2BE2009783FC /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				D3F284101ECB2BE2009783FC /* Cube.h */,
+				D3F284111ECB2BE2009783FC /* Cube.m */,
+				D3F284121ECB2BE2009783FC /* GLContext.h */,
+				D3F284131ECB2BE2009783FC /* GLContext.m */,
+				D3F284141ECB2BE2009783FC /* GLObject.h */,
+				D3F284151ECB2BE2009783FC /* GLObject.m */,
+				D3F284161ECB2BE2009783FC /* Laser.h */,
+				D3F284171ECB2BE2009783FC /* Laser.m */,
+				8EF0AEF01EE644E5003A4EF9 /* Cylinder.h */,
+				8EF0AEF11EE644E5003A4EF9 /* Cylinder.m */,
+				8EF0AEF31EE647D7003A4EF9 /* GLGeometry.h */,
+				8EF0AEF41EE647D7003A4EF9 /* GLGeometry.m */,
+				8EE3673C1EE8FABD005A8D86 /* Terrain.h */,
+				8EE3673D1EE8FABD005A8D86 /* Terrain.m */,
+				D31F59481EF8C26600F55FE7 /* WavefrontOBJ.h */,
+				D31F59491EF8C26600F55FE7 /* WavefrontOBJ.m */,
+				D310D8B11F0C821F00734C7F /* Plane.h */,
+				D310D8B21F0C821F00734C7F /* Plane.m */,
+				D3F364131F3DB43B0013FA9C /* Mirror.h */,
+				D3F364141F3DB43B0013FA9C /* Mirror.m */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		D3F284181ECB2BE2009783FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3F364161F3DB8590013FA9C /* texture_NRM.png */,
+				D328744B1F395CA400BD42C8 /* metal.jpg */,
+				D3585DDE1F3953AF003F1076 /* sphere.mtl */,
+				D3585DDD1F3953AF003F1076 /* sphere.obj */,
+				D3585DD61F3951E6003F1076 /* cube-1.jpg */,
+				D3585DD51F3951E6003F1076 /* cube-2.jpg */,
+				D3585DD31F3951E6003F1076 /* cube-3.jpg */,
+				D3585DD41F3951E6003F1076 /* cube-4.jpg */,
+				D3585DD11F3951E6003F1076 /* cube-5.jpg */,
+				D3585DD21F3951E6003F1076 /* cube-6.jpg */,
+				D383E3B51F188D6900EA64DF /* stoneFloor_NRM.png */,
+				D383E3B61F188D6900EA64DF /* stoneFloor.jpg */,
+				D3BD84081F177618002F5DB1 /* squarepants.jpg */,
+				D37013B71F0A142E001AEF22 /* normal.png */,
+				D314F0D61EF90BB1009878C2 /* car.mtl */,
+				D314F0D51EF90BB1009878C2 /* car.obj */,
+				D3F7C2F41EF8F6C500A6CF8C /* cube.mtl */,
+				D3F7C2F51EF8F6C500A6CF8C /* cube.obj */,
+				D31C9B6A1EF8CF9100FF4903 /* smoothMonkey.mtl */,
+				D31C9B691EF8CF9100FF4903 /* smoothMonkey.obj */,
+				8E75693A1EE93A3A004CC68F /* dirt_01.jpg */,
+				8E7569391EE93A3A004CC68F /* grass_01.jpg */,
+				8EE3673B1EE8FAA9005A8D86 /* terrain_01.jpg */,
+				8E4D43431EE6AEF7007AC649 /* metal_02.jpg */,
+				8E4D433F1EE6AE33007AC649 /* metal_01.png */,
+				8E4D433E1EE6AE33007AC649 /* metal_03.png */,
+				D3F284191ECB2BE2009783FC /* fragment.glsl */,
+				D3F2841A1ECB2BE2009783FC /* frg_laser.glsl */,
+				D3F2841B1ECB2BE2009783FC /* laser.png */,
+				D3F2841C1ECB2BE2009783FC /* texture.jpg */,
+				D3F2841D1ECB2BE2009783FC /* vertex.glsl */,
+				8E7569371EE9398A004CC68F /* frag_terrain.glsl */,
+				D310D8B41F0C85F100734C7F /* frag_framebuffer_plane.glsl */,
+				D383E3B91F18C3BC00EA64DF /* frag_shadowmap.glsl */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3F284271ECB2C46009783FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3F284281ECB2C46009783FC /* GLBaseViewController.h */,
+				D3F284291ECB2C46009783FC /* GLBaseViewController.m */,
+				D3F2842A1ECB2C46009783FC /* ViewController.h */,
+				D3F2842B1ECB2C46009783FC /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E689D051EA5E1EB00ADB0A8 /* OpenGLESLearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E689D281EA5E1EB00ADB0A8 /* Build configuration list for PBXNativeTarget "OpenGLESLearn" */;
+			buildPhases = (
+				8E689D021EA5E1EB00ADB0A8 /* Sources */,
+				8E689D031EA5E1EB00ADB0A8 /* Frameworks */,
+				8E689D041EA5E1EB00ADB0A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLESLearn;
+			productName = OpenGLESLearn;
+			productReference = 8E689D061EA5E1EB00ADB0A8 /* OpenGLESLearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E689D1E1EA5E1EB00ADB0A8 /* OpenGLESLearnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E689D2B1EA5E1EB00ADB0A8 /* Build configuration list for PBXNativeTarget "OpenGLESLearnTests" */;
+			buildPhases = (
+				8E689D1B1EA5E1EB00ADB0A8 /* Sources */,
+				8E689D1C1EA5E1EB00ADB0A8 /* Frameworks */,
+				8E689D1D1EA5E1EB00ADB0A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E689D211EA5E1EB00ADB0A8 /* PBXTargetDependency */,
+			);
+			name = OpenGLESLearnTests;
+			productName = OpenGLESLearnTests;
+			productReference = 8E689D1F1EA5E1EB00ADB0A8 /* OpenGLESLearnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E689CFE1EA5E1EB00ADB0A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wangyang;
+				TargetAttributes = {
+					8E689D051EA5E1EB00ADB0A8 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = FJV2B9GPDW;
+						ProvisioningStyle = Automatic;
+					};
+					8E689D1E1EA5E1EB00ADB0A8 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = P48344HVQL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8E689D051EA5E1EB00ADB0A8;
+					};
+				};
+			};
+			buildConfigurationList = 8E689D011EA5E1EB00ADB0A8 /* Build configuration list for PBXProject "OpenGLESLearn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E689CFD1EA5E1EB00ADB0A8;
+			productRefGroup = 8E689D071EA5E1EB00ADB0A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E689D051EA5E1EB00ADB0A8 /* OpenGLESLearn */,
+				8E689D1E1EA5E1EB00ADB0A8 /* OpenGLESLearnTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E689D041EA5E1EB00ADB0A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BD84091F177624002F5DB1 /* squarepants.jpg in Resources */,
+				8E689D191EA5E1EB00ADB0A8 /* LaunchScreen.storyboard in Resources */,
+				D3F284261ECB2BE2009783FC /* vertex.glsl in Resources */,
+				D314F0D71EF90BB4009878C2 /* car.mtl in Resources */,
+				D314F0D81EF90BB5009878C2 /* car.obj in Resources */,
+				D3F7C2F61EF8F6FC00A6CF8C /* cube.mtl in Resources */,
+				D3F284251ECB2BE2009783FC /* texture.jpg in Resources */,
+				D3F7C2F71EF8F6FD00A6CF8C /* cube.obj in Resources */,
+				8E4D43421EE6AE89007AC649 /* metal_01.png in Resources */,
+				D328744C1F395CA400BD42C8 /* metal.jpg in Resources */,
+				D3F284221ECB2BE2009783FC /* fragment.glsl in Resources */,
+				8E689D161EA5E1EB00ADB0A8 /* Assets.xcassets in Resources */,
+				8E4D43401EE6AE87007AC649 /* metal_03.png in Resources */,
+				8E75693C1EE93A3E004CC68F /* grass_01.jpg in Resources */,
+				D383E3B71F188D7300EA64DF /* stoneFloor_NRM.png in Resources */,
+				D383E3B81F188D7300EA64DF /* stoneFloor.jpg in Resources */,
+				8E75693B1EE93A3D004CC68F /* dirt_01.jpg in Resources */,
+				D3585DDC1F3951E6003F1076 /* cube-1.jpg in Resources */,
+				D3F364171F3DB8590013FA9C /* texture_NRM.png in Resources */,
+				D3585DE01F3953AF003F1076 /* sphere.mtl in Resources */,
+				D3585DDB1F3951E6003F1076 /* cube-2.jpg in Resources */,
+				D3585DD91F3951E6003F1076 /* cube-3.jpg in Resources */,
+				D3585DDF1F3953AF003F1076 /* sphere.obj in Resources */,
+				D3585DDA1F3951E6003F1076 /* cube-4.jpg in Resources */,
+				D3585DD71F3951E6003F1076 /* cube-5.jpg in Resources */,
+				D3585DD81F3951E6003F1076 /* cube-6.jpg in Resources */,
+				8EFB90101EE8FEAF0083B1C6 /* terrain_01.jpg in Resources */,
+				D310D8B51F0C85F100734C7F /* frag_framebuffer_plane.glsl in Resources */,
+				D383E3BA1F18C3BC00EA64DF /* frag_shadowmap.glsl in Resources */,
+				D31C9B6B1EF8D02E00FF4903 /* smoothMonkey.mtl in Resources */,
+				D37013B81F0A1433001AEF22 /* normal.png in Resources */,
+				D31C9B6C1EF8D02E00FF4903 /* smoothMonkey.obj in Resources */,
+				8E4D43441EE6AF02007AC649 /* metal_02.jpg in Resources */,
+				8E7569381EE9398A004CC68F /* frag_terrain.glsl in Resources */,
+				D3F284231ECB2BE2009783FC /* frg_laser.glsl in Resources */,
+				8E689D141EA5E1EB00ADB0A8 /* Main.storyboard in Resources */,
+				D3F284241ECB2BE2009783FC /* laser.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E689D1D1EA5E1EB00ADB0A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E689D021EA5E1EB00ADB0A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F364151F3DB43B0013FA9C /* Mirror.m in Sources */,
+				D3F2841E1ECB2BE2009783FC /* Cube.m in Sources */,
+				D3F284211ECB2BE2009783FC /* Laser.m in Sources */,
+				D3F2842D1ECB2C46009783FC /* ViewController.m in Sources */,
+				D3F284201ECB2BE2009783FC /* GLObject.m in Sources */,
+				D3F2842C1ECB2C46009783FC /* GLBaseViewController.m in Sources */,
+				D3F2841F1ECB2BE2009783FC /* GLContext.m in Sources */,
+				8EF0AEF51EE647D7003A4EF9 /* GLGeometry.m in Sources */,
+				8E689D0E1EA5E1EB00ADB0A8 /* AppDelegate.m in Sources */,
+				D31F594A1EF8C26600F55FE7 /* WavefrontOBJ.m in Sources */,
+				8EF0AEF21EE644E5003A4EF9 /* Cylinder.m in Sources */,
+				D310D8B31F0C821F00734C7F /* Plane.m in Sources */,
+				8E689D0B1EA5E1EB00ADB0A8 /* main.m in Sources */,
+				8EE3673E1EE8FABD005A8D86 /* Terrain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E689D1B1EA5E1EB00ADB0A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E689D241EA5E1EB00ADB0A8 /* OpenGLESLearnTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E689D211EA5E1EB00ADB0A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E689D051EA5E1EB00ADB0A8 /* OpenGLESLearn */;
+			targetProxy = 8E689D201EA5E1EB00ADB0A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E689D121EA5E1EB00ADB0A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E689D131EA5E1EB00ADB0A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E689D171EA5E1EB00ADB0A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E689D181EA5E1EB00ADB0A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E689D261EA5E1EB00ADB0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E689D271EA5E1EB00ADB0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E689D291EA5E1EB00ADB0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FJV2B9GPDW;
+				INFOPLIST_FILE = OpenGLESLearn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OpenGLESLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E689D2A1EA5E1EB00ADB0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FJV2B9GPDW;
+				INFOPLIST_FILE = OpenGLESLearn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OpenGLESLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8E689D2C1EA5E1EB00ADB0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P48344HVQL;
+				INFOPLIST_FILE = OpenGLESLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OpenGLESLearnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLESLearn.app/OpenGLESLearn";
+			};
+			name = Debug;
+		};
+		8E689D2D1EA5E1EB00ADB0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P48344HVQL;
+				INFOPLIST_FILE = OpenGLESLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OpenGLESLearnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLESLearn.app/OpenGLESLearn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E689D011EA5E1EB00ADB0A8 /* Build configuration list for PBXProject "OpenGLESLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E689D261EA5E1EB00ADB0A8 /* Debug */,
+				8E689D271EA5E1EB00ADB0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E689D281EA5E1EB00ADB0A8 /* Build configuration list for PBXNativeTarget "OpenGLESLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E689D291EA5E1EB00ADB0A8 /* Debug */,
+				8E689D2A1EA5E1EB00ADB0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E689D2B1EA5E1EB00ADB0A8 /* Build configuration list for PBXNativeTarget "OpenGLESLearnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E689D2C1EA5E1EB00ADB0A8 /* Debug */,
+				8E689D2D1EA5E1EB00ADB0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E689CFE1EA5E1EB00ADB0A8 /* Project object */;
+}
